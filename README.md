@@ -9,7 +9,6 @@
             <!--+ allow only one host -->
             <add group="test2" action="Permit" condition="{Host 72.47.154.93}" />
             <add group="test2" action="{Write message for a range}" condition="{Range 72.47.154.90-72.47.154.95}" />
-            
             <!--<add group="test2" action="{Write unauthorized}" condition="{MaskArea 72.47.154.0 0.0.0.255}" />-->
             <add group="test2" action="Permit" />
             
@@ -19,7 +18,6 @@
             
             <!--+ block anyone using IE6; even then only allow people with 10.1.x.x addressing access a specific IP address-->
             <add group="restrict" action="{Redirect http://www.getfirefox.com/}" condition="{UserAgent Mozilla}" />
-            
             <add group="restrict" action="Permit">
                 <composite>
                     <add usage="from" value="{MaskArea 10.1.0.0 255.255.0.0}" />
@@ -27,7 +25,6 @@
                     <add value="{Subdomain www}" />
                 </composite>
             </add>
-            
             <add group="restrict" action="{Write Dude}" />
             
             <!--+ call the MyCustomConditionExecutor class; run EmailActionExecutor custom action -->
