@@ -1,7 +1,6 @@
 ﻿#region Copyright
 
-//+ Nalarium Pro 3.0 - Web Module
-//+ Copyright © Jampad Technology, Inc. 2008-2010
+//+ Copyright © David Betz 2009-2016
 
 #endregion
 
@@ -14,10 +13,10 @@ namespace Nalarium.Web.AccessRule
         public ActionExecutor _executor;
 
         //+
-        //- @Value -//
+        
 
         //+
-        //- $Ctor -//
+        
         private Action()
         {
         }
@@ -25,7 +24,7 @@ namespace Nalarium.Web.AccessRule
         public String Value { get; set; }
 
         //+
-        //- @Check -//
+        
         public static Action Create(String value)
         {
             ActionExecutor executor = ActionExecutorFactory.Create(value);

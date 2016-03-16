@@ -1,7 +1,6 @@
 ﻿#region Copyright
 
-//+ Nalarium Pro 3.0 - Web Module
-//+ Copyright © Jampad Technology, Inc. 2008-2010
+//+ Copyright © David Betz 2009-2016
 
 #endregion
 
@@ -12,16 +11,16 @@ namespace Nalarium.Web.AccessRule
 {
     internal class Rule
     {
-        //- @Action -//
+        
         public Action Action { get; set; }
 
-        //- @Condition -//
+        
         public Condition Condition { get; set; }
 
-        //- @WhenList -//
+        
         public List<Condition> WhenList { get; set; }
 
-        //- @Check -//
+        
         public bool Check()
         {
             Boolean execute = false;

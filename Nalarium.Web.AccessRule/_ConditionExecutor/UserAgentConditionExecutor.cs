@@ -1,7 +1,6 @@
 ﻿#region Copyright
 
-//+ Nalarium Pro 3.0 - Web Module
-//+ Copyright © Jampad Technology, Inc. 2008-2010
+//+ Copyright © David Betz 2009-2016
 
 #endregion
 
@@ -11,7 +10,7 @@ namespace Nalarium.Web.AccessRule
 {
     public class UserAgentConditionExecutor : ConditionExecutor
     {
-        //- @Process -//
+        
         public override Boolean Process()
         {
             if (String.IsNullOrEmpty(Value) || String.IsNullOrEmpty(Http.UserAgent))

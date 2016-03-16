@@ -1,7 +1,6 @@
 ﻿#region Copyright
 
-//+ Nalarium Pro 3.0 - Web Module
-//+ Copyright © Jampad Technology, Inc. 2008-2010
+//+ Copyright © David Betz 2009-2016
 
 #endregion
 
@@ -12,7 +11,7 @@ namespace Nalarium.Web.AccessRule
     internal static class ConditionExecutorFactory
     {
         //+
-        //- $GetValue -//
+        
         private static void ParseNameAndValue(String text, out String name, out String value)
         {
             if (String.IsNullOrEmpty(text))
@@ -38,7 +37,7 @@ namespace Nalarium.Web.AccessRule
             }
         }
 
-        //- @Create -//
+        
         internal static ConditionExecutor Create(String usage, String text)
         {
             //+ prase

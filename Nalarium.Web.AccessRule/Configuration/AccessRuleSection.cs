@@ -1,7 +1,6 @@
 ﻿#region Copyright
 
-//+ Nalarium Pro 3.0 - Web Module
-//+ Copyright © Jampad Technology, Inc. 2008-2010
+//+ Copyright © David Betz 2009-2016
 
 #endregion
 
@@ -14,7 +13,7 @@ namespace Nalarium.Web.AccessRule.Configuration
     /// </summary>
     public class AccessRuleSection : Nalarium.Configuration.AppConfig.ConfigurationSection
     {
-        //- @Rules -//
+        
         [ConfigurationProperty("rules")]
         [ConfigurationCollection(typeof(RuleElement), AddItemName = "add")]
         public RuleCollection Rules
@@ -25,7 +24,7 @@ namespace Nalarium.Web.AccessRule.Configuration
             }
         }
 
-        //- @Aliases -//
+        
         [ConfigurationProperty("aliases")]
         [ConfigurationCollection(typeof(AliasElement), AddItemName = "add")]
         public AliasCollection Aliases
@@ -37,7 +36,7 @@ namespace Nalarium.Web.AccessRule.Configuration
         }
 
         //+
-        //- @GetConfigSection -//
+        
         /// <summary>
         /// Gets the config section.
         /// </summary>

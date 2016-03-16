@@ -1,7 +1,6 @@
 ﻿#region Copyright
 
-//+ Nalarium Pro 3.0 - Web Module
-//+ Copyright © Jampad Technology, Inc. 2008-2010
+//+ Copyright © David Betz 2009-2016
 
 #endregion
 
@@ -18,17 +17,17 @@ namespace Nalarium.Web.AccessRule
         }
 
         //+
-        //- @Usage -//
+        
         public String Usage { get; set; }
 
-        //- @Value -//
+        
         public String Value { get; set; }
 
         //+
-        //- $Ctor -//
+        
 
         //+
-        //- @Create -//
+        
         public static Condition Create(String usage, String value)
         {
             ConditionExecutor executor = ConditionExecutorFactory.Create(usage, value);
@@ -46,7 +45,7 @@ namespace Nalarium.Web.AccessRule
         }
 
         //+
-        //- @Check -//
+        
         public Boolean Check()
         {
             return _executor.Process();

@@ -58,9 +58,13 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Nalarium, Version=3.0.0.0, Culture=neutral, PublicKeyToken=dc6429114df2bd49, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(HomeDrive)\_REFERENCE\Debug\Nalarium.dll</HintPath>
+    <Reference Include="Nalarium, Version=3.5.8.0, Culture=neutral, PublicKeyToken=dc6429114df2bd49, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nalarium.3.5.8.0\lib\net45\Nalarium.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nalarium.Web, Version=3.0.0.0, Culture=neutral, PublicKeyToken=dc6429114df2bd49, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nalarium.Web.3.1.0.0\lib\net40\Nalarium.Web.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -122,10 +126,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Nalarium.Web\Nalarium.Web.csproj">
-      <Project>{a0cabb6c-23e0-442e-8dd7-8cc6e01ba288}</Project>
-      <Name>Nalarium.Web</Name>
-    </ProjectReference>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

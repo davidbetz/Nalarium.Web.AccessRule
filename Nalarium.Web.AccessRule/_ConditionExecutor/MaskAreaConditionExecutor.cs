@@ -1,7 +1,6 @@
 ﻿#region Copyright
 
-//+ Nalarium Pro 3.0 - Web Module
-//+ Copyright © Jampad Technology, Inc. 2008-2010
+//+ Copyright © David Betz 2009-2016
 
 #endregion
 
@@ -12,7 +11,7 @@ namespace Nalarium.Web.AccessRule
 {
     public class MaskAreaConditionExecutor : ConditionExecutor
     {
-        //- @Process -//
+        
         public override Boolean Process()
         {
             //++ example: {MaskArea 10.1.0.0 255.255.0.0}
@@ -55,7 +54,7 @@ namespace Nalarium.Web.AccessRule
             return execute;
         }
 
-        //- $GetBinary -//
+        
         private Byte[] GetBinary(String text)
         {
             var result = new Byte[32];

@@ -1,7 +1,6 @@
 ﻿#region Copyright
 
-//+ Nalarium Pro 3.0 - Web Module
-//+ Copyright © Jampad Technology, Inc. 2008-2010
+//+ Copyright © David Betz 2009-2016
 
 #endregion
 
@@ -17,7 +16,7 @@ namespace Nalarium.Web.AccessRule.Configuration
     [DebuggerDisplay("{Name}")]
     public class RuleElement : CommentableElement
     {
-        //- @Group -//
+        
         [ConfigurationProperty("group")]
         public String Group
         {
@@ -31,7 +30,7 @@ namespace Nalarium.Web.AccessRule.Configuration
             }
         }
 
-        //- @Matches -//
+        
         [ConfigurationProperty("composite")]
         [ConfigurationCollection(typeof(ParameterElement), AddItemName = "add")]
         public WhenCollection Composite
@@ -42,7 +41,7 @@ namespace Nalarium.Web.AccessRule.Configuration
             }
         }
 
-        //- @Action -//
+        
         [ConfigurationProperty("action")]
         public String Action
         {
@@ -56,7 +55,7 @@ namespace Nalarium.Web.AccessRule.Configuration
             }
         }
 
-        //- @Condition -//
+        
         [ConfigurationProperty("condition")]
         public String Condition
         {

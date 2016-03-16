@@ -1,7 +1,6 @@
 ﻿#region Copyright
 
-//+ Nalarium Pro 3.0 - Web Module
-//+ Copyright © Jampad Technology, Inc. 2008-2010
+//+ Copyright © David Betz 2009-2016
 
 #endregion
 
@@ -16,7 +15,7 @@ namespace Nalarium.Web.AccessRule
         private readonly Map<String, UInt32> valueMap = new Map<String, UInt32>();
 
         //+
-        //- @Process -//
+        
         public override Boolean Process()
         {
             //++ example: {Range 67.99.12.100-67.99.12.200}
@@ -45,7 +44,7 @@ namespace Nalarium.Web.AccessRule
             return false;
         }
 
-        //- $GetIPAddressValue -//
+        
         private UInt32 GetIPAddressValue(string address)
         {
             lock (_lock)

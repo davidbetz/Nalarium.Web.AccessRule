@@ -1,7 +1,6 @@
 ﻿#region Copyright
 
-//+ Nalarium Pro 3.0 - Web Module
-//+ Copyright © Jampad Technology, Inc. 2008-2010
+//+ Copyright © David Betz 2009-2016
 
 #endregion
 
@@ -16,7 +15,7 @@ namespace Nalarium.Web.AccessRule.Configuration
     [DebuggerDisplay("{Usage}, {Value}")]
     public class MatchElement : CommentableElement
     {
-        //- @Usage -//
+        
         [ConfigurationProperty("usage")]
         public String Usage
         {
@@ -30,7 +29,7 @@ namespace Nalarium.Web.AccessRule.Configuration
             }
         }
 
-        //- @Value -//
+        
         [ConfigurationProperty("value")]
         public String Value
         {
